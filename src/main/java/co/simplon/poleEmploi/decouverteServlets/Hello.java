@@ -14,28 +14,28 @@ public class Hello extends HttpServlet {
 	private String nom;
 
 	public void init() throws ServletException {
-		// Do required initialization
+
 		message = "Hello ";
 	}
 
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// Set response content type
+		
 		response.setContentType("text/html");
 
 		nom = request.getParameter("NOM");
-		// Actual logic goes here.
+		
 		PrintWriter out = response.getWriter();
 		out.println("<h1>" + message +  nom + "</h1>");
 	}
 	
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		// Set response content type
+		
 		response.setContentType("text/html");
 
 		nom = request.getParameter("NOM");
-		// Actual logic goes here.
+		
 		PrintWriter out = response.getWriter();
 		out.println("<h1>" + message +  nom + "</h1>");
 	}
