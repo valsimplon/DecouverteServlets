@@ -8,7 +8,7 @@
 <body>
 <!-- form action="Hello" method="get" -->
 	<form action="Hello" method="post">
-		Saisissez le nom (HTML): <input type="text" name="NOM" size="20">
+		Saisissez le nom (JSP): <input type="text" name="NOM" size="20">
 		<input type="submit" value="Confirmer">
 	</form>
 </body>
