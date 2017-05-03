@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 public class Hello extends HttpServlet {
 	
 	private String message;
-	private String nom;
+	public String nom;
 
 	public void init() throws ServletException {
 
