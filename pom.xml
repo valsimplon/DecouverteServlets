@@ -30,5 +30,20 @@
 			<version>2.3.0</version>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>annuaire</groupId>
+			<artifactId>annuaire</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>jstl</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
+		</dependency>
+		<dependency>
+			<groupId>taglibs</groupId>
+			<artifactId>standard</artifactId>
+			<version>1.1.2</version>
+		</dependency>
 	</dependencies>
 </project>

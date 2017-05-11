@@ -2,6 +2,12 @@
 	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
 		 http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
 	version="3.1">
+	<jsp-config>
+		<taglib>
+			<taglib-uri>http://java.sun.com/jstl/core</taglib-uri>
+			<taglib-location>/WEB-INF/tld/c.tld</taglib-location>
+		</taglib>
+	</jsp-config>
 	<servlet>
 		<servlet-name>HelloWorld</servlet-name>
 		<servlet-class>co.simplon.poleEmploi.decouverteServlets.HelloWorld</servlet-class>
@@ -13,6 +19,10 @@
 	<servlet>
 		<servlet-name>GoodBye</servlet-name>
 		<servlet-class>co.simplon.poleEmploi.decouverteServlets.GoodBye</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>creerContact</servlet-name>
+		<servlet-class>co.simplon.poleEmploi.decouverteServlets.CreerContact</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>HelloWorld</servlet-name>
@@ -26,7 +36,12 @@
 		<servlet-name>GoodBye</servlet-name>
 		<url-pattern>/aurevoir</url-pattern>
 	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>creerContact</servlet-name>
+		<url-pattern>/creerContact.do</url-pattern>
+	</servlet-mapping>
 	<welcome-file-list>
+		<welcome-file>creerContact.jsp</welcome-file>
 		<welcome-file>index.jsp</welcome-file>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
